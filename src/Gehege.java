@@ -19,20 +19,27 @@ public class Gehege {
                 idAlreadyExists = true;
         }
 
-        if(idAlreadyExists == false)
+        if (idAlreadyExists == false)
             tiere.add(a);
     }
 
-    public void removeAnimal(int animalId){
+    public void removeAnimal(int animalId) {
         Animal toDelete = null;
 
-        for(Animal anim : tiere){
-            if(anim.getId() == animalId)
+        for (Animal anim : tiere) {
+            if (anim.getId() == animalId)
                 toDelete = anim;
         }
 
-        if(toDelete != null) // tier wurde gefunden
+        if (toDelete != null) // tier wurde gefunden
             tiere.remove(toDelete);
     }
 
+    public void printAnimals() {
+        System.out.println("Animals in " + this.name + ":");
+        for (Animal a : tiere) {
+            // \t erzeugt einen Tab zur Formatierung
+            System.out.println("\t" + a);
+        }
+    }
 }
