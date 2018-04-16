@@ -1,3 +1,5 @@
+package basics;
+
 public class Fahrzeug {
     private double geschwindigkeit = 0;
     private double maxGesch = 100;

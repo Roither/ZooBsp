@@ -1,3 +1,5 @@
+package basics;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -33,7 +35,7 @@ public class Animal {
     // Overrides werden später noch erklärt
     @Override
     public String toString() {
-        return ("Animal #" + id + ": " + name + ", " + weight + " kg");
+        return ("basics.Animal #" + id + ": " + name + ", " + weight + " kg");
     }
 
     public int getId() {
