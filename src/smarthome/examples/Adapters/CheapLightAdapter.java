@@ -1,11 +1,11 @@
 package smarthome.examples.Adapters;
 
 import smarthome.examples.CheapLight;
-import smarthome.examples.LightInt;
+import smarthome.examples.Light;
 
 public class CheapLightAdapter
         extends CheapLight
-        implements LightInt {
+        implements Light {
     private String name = "CheapLight";
 
     @Override

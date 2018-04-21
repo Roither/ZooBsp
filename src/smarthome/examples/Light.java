@@ -1,6 +1,6 @@
 package smarthome.examples;
 
-public interface LightInt {
+public interface Light {
     public void setName(String name);
 
     public String getName();

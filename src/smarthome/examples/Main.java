@@ -9,10 +9,10 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
         House h = new House();
-        List<LightInt> lights = new LinkedList<>();
+        List<Light> lights = new LinkedList<>();
 
-        LightInt light1 = new CheapLightAdapter();
-        LightInt light2 = new HueLightAdapter();
+        Light light1 = new CheapLightAdapter();
+        Light light2 = new HueLightAdapter();
         lights.add(light1);
         lights.add(light2);
 

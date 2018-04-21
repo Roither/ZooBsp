@@ -1,11 +1,11 @@
 package smarthome.examples.Adapters;
 
 import smarthome.examples.HueLight;
-import smarthome.examples.LightInt;
+import smarthome.examples.Light;
 
 public class HueLightAdapter
         extends HueLight
-        implements LightInt {
+        implements Light {
     private String name = "HueLight";
 
     @Override

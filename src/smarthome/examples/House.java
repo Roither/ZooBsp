@@ -3,14 +3,14 @@ package smarthome.examples;
 import java.util.List;
 
 public class House {
-    private List<LightInt> lights;
+    private List<Light> lights;
 
-    public void addLights(List<LightInt> lights) {
+    public void addLights(List<Light> lights) {
         this.lights = lights;
     }
 
     public void setStateOfAllLights(boolean on) {
-        for (LightInt light : this.lights) {
+        for (Light light : this.lights) {
             if (on)
                 light.turnOn();
             else
@@ -20,7 +20,7 @@ public class House {
 
     public void printAllInfos() {
         System.out.println("House:");
-        for (LightInt light : this.lights) {
+        for (Light light : this.lights) {
             light.printInfo();
         }
     }
