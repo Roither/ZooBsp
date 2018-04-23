@@ -1,21 +1,21 @@
 package single4life;
 
 public class Singleton {
+    private static Singleton singleton = null;
 
-    private static Singleton singleton = new Singleton( );
+    private Singleton() {
+    }
 
-    /* A private Constructor prevents any other
-     * class from instantiating.
-     */
-    private Singleton() { }
+    public static Singleton getInstance() {
+        if (singleton == null) {
+            singleton = new Singleton();
+        }
 
-    /* Static 'instance' method */
-    public static Singleton getInstance( ) {
         return singleton;
     }
 
-    /* Other methods protected by singleton-ness */
-    protected static void demoMethod( ) {
-        System.out.println("Objekt kann hier erstellt werden");
+    public void doSomething() {
+
     }
+
 }

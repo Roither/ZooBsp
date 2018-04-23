@@ -15,4 +15,10 @@ public class Giraffe extends Animal {
     public void setNeckHeight(int neckHeight) {
         this.neckHeight = neckHeight;
     }
+
+    @Override
+    public void makeSound() {
+        // TODO find out sound of giraffe
+        System.out.println("what does the giraffe say");
+    }
 }

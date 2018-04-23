@@ -4,8 +4,7 @@ public abstract class Animal {
     private int age;
 
     public Animal(int age) {
-//        this.age = age;
-        this.setAge(age);
+        this.age = age;
     }
 
     public int getAge() {
@@ -15,4 +14,6 @@ public abstract class Animal {
     public void setAge(int age) {
         this.age = age;
     }
+
+    public abstract void makeSound();
 }

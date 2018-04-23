@@ -1,6 +1,6 @@
 package klausurvorbereitung1;
 
-public class Bird extends Animal{
+public class Bird extends Animal {
     private int wingspan;
 
     public Bird() {
@@ -19,5 +19,10 @@ public class Bird extends Animal{
 
     public void setWingspan(int wingspan) {
         this.wingspan = wingspan;
+    }
+
+    @Override
+    public void makeSound() {
+        System.out.println("piep");
     }
 }

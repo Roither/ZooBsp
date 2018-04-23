@@ -1,6 +1,8 @@
 package smarthome.examples;
 
 public interface Light {
+    public final int i = 5;
+
     public void setName(String name);
 
     public String getName();
@@ -11,8 +13,7 @@ public interface Light {
 
     public boolean getLightState();
 
-    // default method for infos IN INTERFACE
     public default void printInfo() {
-        System.out.println(getName() + ": " + getLightState());
+        System.out.println(getName() + ": has state " + getLightState());
     }
 }
