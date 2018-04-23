@@ -7,7 +7,7 @@ public class Class1 {
     public int attPub1;
     private int Priv1;
     protected int Prot1;
-    
+
 
     Class2 class2 = new Class2();
     Class3 class3 = new Class3();
