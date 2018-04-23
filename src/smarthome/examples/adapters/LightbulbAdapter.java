@@ -1,10 +1,10 @@
-package smarthome.examples.Adapters;
+package smarthome.examples.adapters;
 
 import smarthome.examples.Light;
 import smarthome.examples.Lightbulb;
 
 public class LightbulbAdapter extends Lightbulb implements Light {
-    private String name;
+    private String name = "Lightbulb";
 
     @Override
     public void setName(String name) {

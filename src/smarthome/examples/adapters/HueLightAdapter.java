@@ -1,4 +1,4 @@
-package smarthome.examples.Adapters;
+package smarthome.examples.adapters;
 
 import smarthome.examples.HueLight;
 import smarthome.examples.Light;

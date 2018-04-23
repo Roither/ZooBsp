@@ -8,7 +8,7 @@ public class Lightbulb {
     }
 
     public void off() {
-        on = true;
+        on = false;
     }
 
     public boolean getOn() {
